@@ -4,9 +4,8 @@
     <h1 class="display-5 mt-4">Летим {{from}}</h1>
     <p class="mb-4">Найдено {{count}} туров, от {{price_min}} до {{price_max}} P и от {{night_min}}
         ночей до {{night_max}} ночей</p>
-    <!-- CARDS -->
     <div class="row mt-5">
-        {% for tour in tours %}
+        {% for tour_id, tour in tours.items %}
         {% include 'card.html' %}
         {% endfor %}
     </div>

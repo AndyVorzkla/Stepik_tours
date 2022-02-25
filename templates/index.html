@@ -12,7 +12,7 @@
     </section>
     <div class="container">
       <div class="row mt-5">
-          {% for tour in random_6_tours %}
+          {% for tour_id, tour in tours.items %}
           {% include 'card.html' %}
           {% endfor %}
       </div>
