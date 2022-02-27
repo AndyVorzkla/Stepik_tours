@@ -1,6 +1,4 @@
-import random
 from django.shortcuts import render
-from django.http import HttpResponse
 import data
 from random import sample
 
